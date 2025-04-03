@@ -6,7 +6,7 @@ body {
 
 
 #phoneNumber1 {
-    color: #588157;
+    color: #344e41;
 
 }
 
@@ -37,6 +37,27 @@ body {
 
 #header{
     background-image: url("/imgs/woodBG.jpg");
+}
+#bgTwo{
+    background-color: #dad7cd; 
+   
+    background-size: cover;
+    padding: 20px 0;
+}
+
+#bgThree{
+    background-color: #3a5a40;
+    background-size: cover;
+    padding: 20px 0;
+}
+#bgFour{
+    background-color: #a3b18a;
+    background-size: cover;
+    padding: 20px 0;
+}
+#serviceArea{
+    font-size: 1.2em;
+ 
 }
 /*
 dad7cd
