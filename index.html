@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,8 +38,18 @@
             <div class="col-12" id="serviceArea">
                 <h1>Proudly servicing the Greater Tri-Cities - Bristol (TN/VA), Johnson City, and Kingsport also Northeast Tennessee and Southwest Virginia</h1>
                 <input type="text" class="form-control-inline my-3" id="inputAddress" placeholder="Enter your Zip Code" aria-label="Enter your Zip Code here">
-                <button type="submit" class="btn btn-primary " id="findServiceAreaBtn">Do We Service Your Area?</button>
+                <button type="submit" class="btn btn-primary " id="findServiceAreaBtn" onclick="searchZip">Do We Service Your Area?</button>
                 <p>Or Contact Us <strong>Today</strong> at 423-217-3609</p>
+                <div class="alert alert-success hidden" role="alert" id="zipAlert">
+                    <h4 class="alert-heading">We service your area!</h4>
+                    <p>Contact Us <strong>Today</strong> at 423-217-3609 to schedule an appointment.</p>
+                    <hr>
+                    <p class="mb-0">We look forward to hearing from you.</p>
+                  </div>
+                  <div class="alert alert-danger hidden" role="alert" id="zipAlertFail">
+                    <h4 class="alert-heading">We are sorry!</h4>
+                    <p>We do not service you area at this time. </p>
+                  </div>
             </div>
         </div>
             <div class="row">
@@ -65,7 +76,7 @@
                           <div class="card">
                             <div class="card-body">
                               <h5 class="card-title">Emma Thompson</h5>
-                              <p class="card-text">I am extremely pleased with the top-notch handyman services provided by Holston Carpentry. Their attention to detail and craftsmanship are truly impressive. I highly recommend their services for any home improvement projects you may have.</p>
+                              <p class="card-text">I couldn't be happier with the quality of service I received from Holston Carpentry. Their handyman services exceeded my expectations. From start to finish, they were professional, efficient, and friendly. I highly recommend Holston Carpentry for all your home improvement needs.</p>
                             </div>
                           </div>
                         </div>
@@ -85,43 +96,33 @@
     </div>
 <div id="bgFour">
     <div class="container py-5 ">
-        <h3>Contact Us <strong>Today</strong> at 423-217-3609 to schedule an appointment</h3>
-        <div class="row ">
+        <h3>Holston Carpentry is proud to be fully licensed and insured, ensuring peace of mind and quality service for all your carpentry needs. Contact Us <strong>Today</strong> at 423-217-3609 to schedule an appointment</h3>
+        <h4 class=" pt-5">We offer the following services:</h4>
+        <div class="row">
             <div class="col-sm-6">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="card-header">
-                        Services
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Carpentry</li>
-                        <li class="list-group-item">Rot Repair</li>
-                        <li class="list-group-item">Decks/Porches</li>
-                        <li class="list-group-item">Trim</li>
-                        <li class="list-group-item">Plumbing Fixture Installation</li>
+                    <ul>
+                        <li >Carpentry</li>
+                        <li >Rot Repair</li>
+                        <li >Decks/Porches</li>
+                        <li >Trim</li>
+                        <li >Plumbing Fixture Installation</li>
                     </ul>
-                </div>
             </div>
           
             <div class="col-sm-6">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="card-header ">
-                        Services
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Light Fixture Installation</li>
-                        <li class="list-group-item">Flooring</li>
-                        <li class="list-group-item">Drywall</li>
-                        <li class="list-group-item">Painting</li>
-                        <li class="list-group-item">Handyman Services</li>
+                <ul>
+                        <li >Light Fixture Installation</li>
+                        <li >Flooring</li>
+                        <li >Drywall</li>
+                        <li >Painting</li>
+                        <li >Handyman Services</li>
                     </ul>
-                </div>
+
             </div>
         </div>
     </div>
 </div>
 </body>
-<script>
-    //py-5 my-5 text-body-emphasis
-</script>
+<script src="javascript.js"></script>
 
 </html>
